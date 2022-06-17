@@ -3,9 +3,12 @@
   --content-width: 1160px;
   --content-fluid-width: 1720px;
   --container-offset: 15px;
-  --container-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
   --light-color: #fff;
   --accent-color: #D52027;
+  --dark-color: #141024;
+  --text-color: rgba(#141024, 0.7);
 }
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
@@ -25,21 +28,21 @@
 
 /* stylelint-disable */ /* stylelint-disable */
 @font-face {
-  font-family: "JostRegular";
+  font-family: "Jost";
   src: url("../fonts/JostRegular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "JostSemiBold";
+  font-family: "Jost";
   src: url("../fonts/JostSemiBold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "JostBold";
+  font-family: "Jost";
   src: url("../fonts/JostBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
@@ -131,6 +134,12 @@ a {
   max-width: var(--container-width);
 }
 
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-fluid-width);
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -152,5 +161,60 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav__link {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.phone {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  text-align: right;
+  color: var(--light-color);
+}
+
+.hero-container {
+  height: 350px;
+  background: var(--dark-color);
 }
 /*# sourceMappingURL=main.css.map */
