@@ -1,0 +1,49 @@
+.about {
+  padding: 120px 0;
+  background-color: var(--light-color);
+
+  &__descr {
+    margin-bottom: 50px;
+    max-width: 891px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__highlight {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__item {
+    grid-column: span 3;
+  }
+
+  &__digit {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 160%;
+    color: var(--accent-color);
+  }
+
+  &__text {
+    margin: 0;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+}
