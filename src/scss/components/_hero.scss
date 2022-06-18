@@ -1,4 +1,33 @@
-.hero-container {
-  height: 350px;
+.hero {
+  min-height: 750px;
   background: var(--dark-color);
+
+  &__container {
+    @include flex();
+  }
+
+  &__content {
+    max-width: 516px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 344px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: var(--light-color);
+
+    &-text {
+      max-width: 90%;
+      margin-bottom: 50px;
+      display: block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--light-color);
+    }
+  }
 }

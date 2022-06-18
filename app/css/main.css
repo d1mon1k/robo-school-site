@@ -1,5 +1,5 @@
 :root {
-  --font-family: "JostRegular", "Lato";
+  --font-family: "Jost", "Lato";
   --content-width: 1160px;
   --content-fluid-width: 1720px;
   --container-offset: 15px;
@@ -163,6 +163,27 @@ a {
   position: relative;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 26px 54px;
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--light-color);
+  border-radius: 5px;
+  background-color: var(--accent-color);
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -213,8 +234,35 @@ a {
   color: var(--light-color);
 }
 
-.hero-container {
-  height: 350px;
+.hero {
+  min-height: 750px;
   background: var(--dark-color);
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__content {
+  max-width: 516px;
+}
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 344px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.hero__title-text {
+  max-width: 90%;
+  margin-bottom: 50px;
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--light-color);
 }
 /*# sourceMappingURL=main.css.map */
