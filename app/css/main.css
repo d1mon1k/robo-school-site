@@ -184,6 +184,64 @@ a {
   background-color: var(--accent-color);
 }
 
+.tooltip__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 6px 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(20, 16, 36, 0.08);
+}
+.tooltip__btn:focus + .tooltip__txt {
+  visibility: visible;
+  opacity: 1;
+}
+@media (any-hover: hover) {
+  .tooltip__btn:hover + .tooltip__txt {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.tooltip__svg {
+  width: 100%;
+  height: 100%;
+}
+.tooltip__txt {
+  padding: 15px 20px;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--dark-color);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 8px rgba(20, 16, 36, 0.1);
+  box-shadow: 0px 2px 8px rgba(20, 16, 36, 0.1);
+  background-color: var(--light-color);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  color: var(--dark-color);
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -279,7 +337,7 @@ a {
   line-height: 160%;
   color: var(--dark-color);
 }
-.about__highlight {
+.about__descr-highlight {
   font-family: "Jost";
   font-weight: 600;
   font-size: 30px;
@@ -311,5 +369,35 @@ a {
   font-size: 18px;
   line-height: 160%;
   color: var(--text-color);
+}
+
+.benefits {
+  padding: 100px 0;
+  background-color: #F9F9F9;
+}
+.benefits__title {
+  margin-top: 0;
+}
+.benefits__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 40px;
+}
+.benefits__item {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+}
+.benefits__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.benefits__descr {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
