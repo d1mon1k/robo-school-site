@@ -2,10 +2,6 @@
   padding: 100px 0;
   background-color: #F9F9F9;
 
-  &__title {
-    margin-top: 0;
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

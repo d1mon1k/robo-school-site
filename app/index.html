@@ -24,8 +24,8 @@
     </div>
     <nav class="nav" title="Главное меню">
       <ul class="nav__list list-reset">
-        <li class="nav__item"><a href="#" class="nav__link">О школе</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Тренеры</a></li>
+        <li class="nav__item"><a data-scroll href="#about" class="nav__link">О школе</a></li>
+        <li class="nav__item"><a data-scroll href="#trainers" class="nav__link">Тренеры</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Стоимость</a></li>
       </ul>
     </nav>
@@ -44,7 +44,7 @@
   </div>
 </section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="container">
     <h2 class="visually-hidden">О Robo School школе</h2>
     <div class="about__descr">
@@ -101,6 +101,89 @@
         <p class="benefits__descr">Возможность пройти практику по преподаванию робототехники на базе R: ED LAB (в оффлайн или онлайн формате)</p>
       </li>
     </ul>
+  </div>
+</section>
+
+      <section class="trainers" id="trainers">
+  <div class="container">
+    <h2 class="section-title trainers__title">Профессиональные тренеры</h2>
+  </div>
+  <div class="trainers__wrapper">
+    <div class="swiper trainers__content">
+      <div class="swiper-wrapper trainers__swiper-wrapper ">
+         <div class="swiper-slide trainers__swiper-slide">
+            <div class="trainers__item">
+              <picture>
+                <source srcset="../img/trainer-1.avif" type="image/avif">
+                <source srcset="../img/trainer-1.webp" type="image/webp">
+                <img loading="lazy" src="../img/trainer-1." class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+              </picture>
+              <h3 class="trainers__subtitle">Ирина Лайм</h3>
+              <span class="trainers__descr">преподаватель по робототехнике</span>
+              <button class="btn-reset trainers__btn-more">Подробнее</button>
+            </div>
+         </div>
+         <div class="swiper-slide  trainers__swiper-slide">
+            <div class="trainers__item">
+              <picture>
+                <source srcset="../img/trainer-2.avif" type="image/avif">
+                <source srcset="../img/trainer-2.webp" type="image/webp">
+                <img loading="lazy" src="../img/trainer-2." class="trainers__image" width="360" height="500" alt="Марина Орлова">
+              </picture>
+              <h3 class="trainers__subtitle">Марина Орлова</h3>
+              <span class="trainers__descr">преподаватель по робототехнике</span>
+              <button class="btn-reset trainers__btn-more">Подробнее</button>
+            </div>
+         </div>
+         <div class="swiper-slide  trainers__swiper-slide">
+            <div class="trainers__item">
+              <picture>
+                <source srcset="../img/trainer-3.avif" type="image/avif">
+                <source srcset="../img/trainer-3.webp" type="image/webp">
+                <img loading="lazy" src="../img/trainer-3." class="trainers__image" width="360" height="500" alt="Максим Петров">
+              </picture>
+              <h3 class="trainers__subtitle">Максим Петров</h3>
+              <span class="trainers__descr">преподаватель по программированию</span>
+              <button class="btn-reset trainers__btn-more">Подробнее</button>
+            </div>
+         </div>
+         <div class="swiper-slide  trainers__swiper-slide">
+            <div class="trainers__item">
+              <picture>
+                <source srcset="../img/trainer-4.avif" type="image/avif">
+                <source srcset="../img/trainer-4.webp" type="image/webp">
+                <img loading="lazy" src="../img/trainer-4." class="trainers__image" width="360" height="500" alt="Константин Назаров">
+              </picture>
+              <h3 class="trainers__subtitle">Константин Назаров</h3>
+              <span class="trainers__descr">преподаватель по робототехнике</span>
+              <button class="btn-reset trainers__btn-more">Подробнее</button>
+            </div>
+         </div>
+         <div class="swiper-slide  trainers__swiper-slide">
+            <div class="trainers__item">
+              <picture>
+                <source srcset="../img/trainer-5.avif" type="image/avif">
+                <source srcset="../img/trainer-5.webp" type="image/webp">
+                <img loading="lazy" src="../img/trainer-5." class="trainers__image" width="360" height="500" alt="Лиза Весенняя">
+              </picture>
+              <h3 class="trainers__subtitle">Лиза Весенняя</h3>
+              <span class="trainers__descr">преподаватель по программированию</span>
+              <button class="btn-reset trainers__btn-more">Подробнее</button>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="trainers__navigation">
+      <div class="swiper-scrollbar trainers__scrollbar">
+        <div class="swiper-scrollbar-drag trainers__drag"></div>
+      </div>
+      <div class="trainers__btns">
+        <button class="btn-reset trainers__btn trainers__btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+        <button class="btn-reset trainers__btn trainers__btn--next" aria-label="Перейти к следующему слайду"></button>
+      </div>
+    </div>
   </div>
 </section>
 

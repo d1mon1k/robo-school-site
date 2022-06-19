@@ -1,0 +1,78 @@
+.trainers {
+  padding: 100px 0;
+
+  &__wrapper {
+    padding-left: max(15px, calc((100% - var(--content-width)) / 2));
+  }
+
+  &__swiper-wrapper {
+    margin-bottom: 75px;
+  }
+
+  &__swiper-slide {
+    max-width: 360px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    max-height: 500px;
+    border-radius: 20px;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+
+  &__btn-more {
+    color: var(--accent-color);
+  }
+
+  &__navigation {
+    @include flex-all-sb;
+  }
+
+  &__scrollbar {
+    height: 5px;
+    width: 360px;
+  }
+
+  &__drag {
+    background-color: var(--dark-color);
+  }
+
+  &__btns {
+    @include flex;
+  }
+
+  &__btn {
+    @include bg-cover;
+
+    width: 40px;
+    height: 40px;
+
+    &--prev {
+      margin-right: 10px;
+      background-image: url('../../img/left-btn.svg');
+    }
+
+    &--next {
+      background-image: url('../../img/right-btn.svg');
+    }
+  }
+}
