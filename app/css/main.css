@@ -174,7 +174,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding: 26px 54px;
-  max-width: 260px;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
@@ -182,6 +181,9 @@ a {
   color: var(--light-color);
   border-radius: 5px;
   background-color: var(--accent-color);
+}
+.btn--dark {
+  background-color: var(--dark-color);
 }
 
 .tooltip__btn {
@@ -323,6 +325,9 @@ a {
   font-size: 20px;
   line-height: 160%;
   color: var(--light-color);
+}
+.hero__btn {
+  max-width: 260px;
 }
 
 .about {
@@ -580,5 +585,91 @@ a {
 .tariffs__btn {
   margin-top: 60px;
   min-width: 100%;
+}
+
+.application {
+  padding: 85px 0;
+  background-color: var(--accent-color);
+  background-image: url(../../img/percent.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.application__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 60px;
+}
+.application__block--left {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 5;
+  grid-column-end: 7;
+  padding-top: 20px;
+}
+.application__block--right {
+  -ms-grid-column-span: 5;
+  grid-column: span 5;
+}
+.application__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  color: var(--light-color);
+}
+.application__descr {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--light-color);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.form__input {
+  margin-bottom: 10px;
+  padding: 20px 19px;
+  width: 100%;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--dark-color);
+  border: none;
+  border-radius: 5px;
+  background: #F6F6F6;
+}
+.form__input::-webkit-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input::-moz-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input:-ms-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input::-ms-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input::placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input:focus {
+  outline: none;
+}
+.form__btn {
+  max-height: 64px;
 }
 /*# sourceMappingURL=main.css.map */
