@@ -303,6 +303,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 163px;
 }
 .hero__content {
   max-width: 516px;
@@ -310,7 +314,6 @@ a {
 .hero__title {
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 344px;
   font-weight: 600;
   font-size: 70px;
   line-height: 160%;
@@ -328,6 +331,11 @@ a {
 }
 .hero__btn {
   max-width: 260px;
+}
+.hero__image {
+  -webkit-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  transform: translateX(150px);
 }
 
 .about {
@@ -671,5 +679,32 @@ a {
 }
 .form__btn {
   max-height: 64px;
+}
+
+.footer {
+  padding: 40px 0px 45px;
+  background-color: var(--dark-color);
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-bottom: 5px;
+}
+.footer__copy {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=main.css.map */
