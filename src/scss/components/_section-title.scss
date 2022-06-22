@@ -6,4 +6,12 @@
   font-size: 50px;
   line-height: 160%;
   color: var(--dark-color);
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include mobile {
+    font-size: 30px;
+  }
 }

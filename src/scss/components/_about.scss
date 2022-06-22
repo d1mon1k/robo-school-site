@@ -2,6 +2,14 @@
   padding: 120px 0;
   background-color: var(--light-color);
 
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
   &__descr {
     margin-bottom: 50px;
     max-width: 891px;
@@ -17,6 +25,19 @@
       font-size: 30px;
       line-height: 160%;
       color: var(--dark-color);
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+
+    @include desktop {
+      max-width: initial;
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 20px;
     }
   }
 
@@ -24,10 +45,29 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
+
+    @include desktop {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+    }
   }
 
   &__item {
     grid-column: span 3;
+
+    @include desktop {
+      text-align: center;
+    }
+
+    @include mobile {
+      grid-column: span 4;
+    }
   }
 
   &__digit {
@@ -36,6 +76,10 @@
     font-size: 70px;
     line-height: 160%;
     color: var(--accent-color);
+
+    @include small-tablet {
+      font-size: 55px;
+    }
   }
 
   &__text {
@@ -45,5 +89,9 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--text-color);
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }

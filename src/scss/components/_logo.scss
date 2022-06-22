@@ -1,0 +1,11 @@
+.logo {
+  @include flex-all-center;
+
+  & img {
+    margin-top: 3px;
+
+    @include mobile {
+      max-width: 80%;
+    }
+  }
+}

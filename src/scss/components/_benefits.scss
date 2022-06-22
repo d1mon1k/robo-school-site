@@ -2,10 +2,22 @@
   padding: 100px 0;
   background-color: #F9F9F9;
 
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
@@ -18,9 +30,17 @@
     margin-top: 0;
     margin-bottom: 20px;
     gap: 10px;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__descr {
     margin: 0;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

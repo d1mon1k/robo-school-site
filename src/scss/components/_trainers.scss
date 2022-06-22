@@ -1,16 +1,36 @@
 .trainers {
   padding: 100px 0;
 
+  @include tablet {
+    padding: 70px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
   &__wrapper {
     padding-left: max(15px, calc((100% - var(--content-width)) / 2));
   }
 
   &__swiper-wrapper {
     margin-bottom: 75px;
+
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
   }
 
   &__swiper-slide {
     max-width: 360px;
+
+    @include small-tablet {
+      max-width: 300px;
+    }
+
+    @include mobile {
+      max-width: 220px;
+    }
   }
 
   &__image {
@@ -58,6 +78,10 @@
 
   &__btns {
     @include flex;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__btn {

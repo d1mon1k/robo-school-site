@@ -1,6 +1,9 @@
 .hero {
-  min-height: 750px;
   background: var(--dark-color);
+
+  @include small-tablet {
+    padding-bottom: 80px;
+  }
 
   &__container {
     @include flex-v-center;
@@ -10,6 +13,12 @@
 
   &__content {
     max-width: 516px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -20,6 +29,23 @@
     line-height: 160%;
     text-transform: uppercase;
     color: var(--light-color);
+    word-wrap: nowrap;
+
+    @include desktop {
+      font-size: 65px;
+    }
+
+    @include tablet {
+      font-size: 60px;
+    }
+
+    @include tablet {
+      font-size: 45px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
 
     &-text {
       max-width: 90%;
@@ -29,14 +55,26 @@
       font-size: 20px;
       line-height: 160%;
       color: var(--light-color);
+
+      @include mobile {
+        text-align: center;
+      }
     }
   }
 
   &__btn {
     max-width: 260px;
+
+    @include tablet {
+      padding: 20px 47px;
+    }
   }
 
   &__image {
     transform: translateX(150px);
+
+    @include small-tablet {
+      display: none;
+    }
   }
 }

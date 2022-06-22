@@ -7,6 +7,16 @@
 
   &__container {
     @include flex-all-sb();
+
+    @include tablet {
+      justify-content: initial;
+    }
+  }
+
+  &__phone {
+    @include tablet {
+      display: none;
+    }
   }
 }
 

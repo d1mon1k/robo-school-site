@@ -16,4 +16,8 @@
     text-align: center;
     color: var(--light-color);
   }
+
+  @include tablet {
+    display: none;
+  }
 }

@@ -1,0 +1,29 @@
+.burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+
+  @include tablet {
+    @include flex-all-center;
+  }
+
+  &__line {
+    width: 20px;
+    height: 2px;
+    border-radius: 14px;
+    background-color: #fff;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+
+    &:last-child {
+      transform: translateX(-50%);
+      max-width: 10px;
+    }
+  }
+}

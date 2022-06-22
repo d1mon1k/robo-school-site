@@ -2,10 +2,28 @@
   padding-top: 35px;
   padding-bottom: 120px;
 
+  @include tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 40px;
+    grid-column-gap: 40px;
+
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 40px;
+      grid-column-gap: 0px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &__item {
@@ -16,6 +34,25 @@
     padding: 40px;
     border: 1px solid rgba(20, 16, 36, 0.2);
     border-radius: 20px;
+
+    @include desktop {
+      padding: 35px;
+    }
+
+    @include tablet {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    @include small-tablet {
+      grid-column-start: 2;
+      grid-column-end: 6;
+    }
+
+    @include mobile {
+      grid-column-start: 1;
+      grid-column-end: 7;
+    }
 
     &--main {
       align-self: center;
@@ -33,6 +70,10 @@
       & .tariffs__descr {
         color: var(--light-color);
       }
+
+      @include tablet {
+        height: 100%;
+      }
     }
   }
 
@@ -48,6 +89,14 @@
     line-height: 160%;
     text-align: center;
     color: var(--dark-color);
+
+    @include desktop {
+      font-size: 25px;
+    }
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
 
     &:before {
       content: '';
@@ -74,6 +123,10 @@
     line-height: 160%;
     text-align: center;
     color: var(--dark-color);
+
+    @include desktop {
+      font-size: 45px;
+    }
   }
 
   &__descr {
@@ -92,5 +145,19 @@
   &__btn {
     margin-top: 60px;
     min-width: 100%;
+
+    @include desktop {
+      padding: 20px 47px;
+
+    }
+
+    @include tablet {
+      margin-top: 45px;
+    }
+
+
+    @include small-tablet {
+      margin-top: 30px;
+    }
   }
 }
