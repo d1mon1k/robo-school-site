@@ -1,4 +1,6 @@
 .burger {
+  position: relative;
+  z-index: 501;
   display: none;
   width: 44px;
   height: 44px;

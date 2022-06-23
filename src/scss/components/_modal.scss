@@ -1,0 +1,107 @@
+.modal {
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    margin-right: 40px;
+
+    @include small-tablet {
+      margin-right: 20px;
+    }
+  }
+
+  &__info {
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+
+    @include small-tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-svg {
+    width: 30px;
+    height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      @include small-tablet {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.graph-modal {
+  &__container {
+    padding: 40px;
+
+    @include small-tablet {
+      padding: 40px 20px 20px;
+    }
+  }
+
+  &__close {
+    width: auto;
+    height: auto;
+    right: 40px;
+    top: 40px;
+
+    @include small-tablet {
+      top: 10px;
+      right: 15px;
+    }
+  }
+}
+
+.simplebar-track {
+  border-radius: 40px;
+  background-color: rgba(20, 16, 36, 0.08);
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 5px;
+}
+
+.simplebar-scrollbar:before {
+  inset: 0;
+  opacity: 1;
+  background-color: var(--dark-color);
+}
+
+.simplebar-visible {
+  inset: 0;
+  border-radius: 40px;
+  background-color: var(--dark-color);
+}

@@ -21,7 +21,7 @@ console.log(mobileCheck())
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from './functions/burger';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -41,7 +41,8 @@ console.log(mobileCheck())
 // import { getHeaderHeight } from './functions/header-height';
 
 // Подключение плагина кастом-скролла
-// import 'simplebar';
+import 'simplebar';
+
 
 // Подключение плагина для позиционирования тултипов
 // import { createPopper, right} from '@popperjs/core';

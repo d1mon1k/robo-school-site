@@ -1,0 +1,75 @@
+.tabs {
+  &__panel {
+    max-height: 354px;
+  }
+
+  &__nav {
+    max-width: 678px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &-btn:focus {
+      background-color: initial;
+      color: var(--accent-color);
+    }
+
+    &-btn--active {
+      color: var(--accent-color);
+    }
+
+    &-item {
+      font-family: 'Jost';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--dark-color);
+
+      @include small-tablet {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__border {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(20, 16, 36, 0.11);
+    margin-bottom: 20px;
+  }
+
+  &__info-block {
+    margin-bottom: 40px;
+  }
+
+  &__personal-info {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--dark-color);
+
+    @include small-tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+  }
+}
